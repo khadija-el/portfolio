@@ -1,0 +1,9 @@
+mat-card {
+  box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+  margin: 20px 0 20px;
+}
+
+::ng-deep .mat-card-image {
+  // width: calc(100% + 32px);
+  // margin: 0 -16px 0px -16px !important;
+}

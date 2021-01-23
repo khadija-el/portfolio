@@ -1,0 +1,16 @@
+<app-title title="Skills" section="3"></app-title>
+
+<div class="container" appScroll (visibilityChange)="$event === true ? state = 'show' : state = 'hide'">
+  <div class="row justify-content-center">
+    <div class="col-md-4" *ngFor="let e of list | async; let i=index">
+      <mat-card  [@scrollAnimation]="state">
+        <h3 style="text-transform: capitalize;">{{e.domaine}}</h3>
+        <div *ngFor="let o of e.items; let i=index" class="mb-2">
+          <span>{{o.name}}</span>
+          <span style="float: right;">{{o.value}}%</span>
+          <mat-progress-bar mode="determinate" color="accent" [value]="o.value"></mat-progress-bar>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>

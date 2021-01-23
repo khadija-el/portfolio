@@ -1,0 +1,45 @@
+<div class="img1" [ngStyle]="{'background-image': 'url(' + img + ')', 'filter': service2.filter}">
+  <div class="h1" [@scrollTitle]="state">
+
+    <h1>Port-Folio</h1>
+    <mat-icon style="font-size: 40px;">keyboard_arrow_down</mat-icon>
+  </div>
+</div>
+
+<div class="container" appScroll (visibilityChange)="$event === true ? state = 'show' : state = 'hide'">
+  <mat-card [@scrollAnimation]="state">
+    <div class="row  justify-content-center">
+      <div class="col-md-7 text">
+        <!-- <div *ngFor="let item of list; let i=index">
+          <p><i [class]="item.icon" style="font-size: 20px;"></i>&nbsp;&nbsp;&nbsp;{{item.name}}</p>
+        </div> -->
+        <h1>{{o.firstName}} {{o.lastName}}</h1>
+        <h2>{{o.profession}}</h2>
+        <p>{{o.intro}}</p>
+
+        <div class="d-flex mt-4">
+          <button mat-raised-button [routerLink]="['/cv']"  color="primary">Mon CV</button>
+          &nbsp;&nbsp;
+          <button mat-raised-button color="accent" (click)="scrollTo('section4')">Projects</button>
+        </div>
+      </div>
+      <!-- <div class="between">
+
+      </div> -->
+      <div class="col-md-5 d-flex flex-column justify-content-center align-items-center">
+        <img [src]="o.image">
+
+      </div>
+    </div>
+  </mat-card>
+
+  <!-- <mat-card [@scrollAnimation]="state" style="box-shadow: 2px 2px 10px 1px rgba(0,0,0,.2);margin: 20px 0 20px;">
+
+    <div class="text-center" style="margin: 20px;font-size: 20px;">
+      My passion is to create from zero line to full application thats may hepls others for their lifes.
+      so i teel my self always : "I need more power".
+      <cite>Mourabit Mohamed, Dev, IT.</cite>
+
+    </div>
+  </mat-card> -->
+</div>

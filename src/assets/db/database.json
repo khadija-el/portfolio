@@ -1,0 +1,264 @@
+{
+  "experiences": [
+    {
+      "id": 1,
+      "period": "2018-07 à 2018-10",
+      "societe": "Harmony Technology",
+      "job": "Developpeur web Full Stack",
+      "task": "Projet de développement de système RFID pour la traçabilité des bandes de sauvegarde",
+      "tech":"RFID API, Asp.net, Sql server, Angular, SignalR",
+      "links":""
+    },
+    {
+      "id": 2,
+      "period": "2018-08",
+      "societe": "Localhost",
+      "job": "Developpeur web Full Stack",
+      "task": "Application web de recette de cuisine",
+      "tech":"Angular, Angular Universal, Node expresse js (API), Mongo db, JWT, Socket io",
+      "links":"recipe0;"
+    },
+    {
+      "id": 3,
+      "period": "2018-10",
+      "societe": "Localhost",
+      "job": "Developpeur web Full Stack",
+      "task": "Site web pour trouver l'ouvrier/professionnelle le plus adequat/proche",
+      "tech":"Angular, Angular material, Asp .net core, Mysql",
+      "links":"ouvrier0;"
+    },
+       {
+      "id": 6,
+      "period": "2020-03 à 2020-06",
+      "societe": "",
+      "job": "Developpeur web Full Stack",
+      "task": "Système pour la gestion des biens informatique et Application Bureau qui collecte les informations système (cpu, gpu, network, bios, model, ram ...), et une liste des applications installé sur l'appareil.",
+      "tech":"Angular, Angular material, Asp .net core, Sqlite, Electron JS/TS",
+      "links":"gestion-material0;https://gestion-material.herokuapp.com/a/desktop0;"
+    },
+    {
+      "id": 7,
+      "period": "2020-11",
+      "societe": "localhost:80",
+      "job": "Developpeur Full Stack",
+      "task": "Time track est un logiciel de gestion du temps et de pointage",
+      "tech":"Angular, Angular material, Asp .net core, Sqlite",
+      "links":"https://p0intage.herokuapp.com0;"
+    },
+    {
+      "id": 8,
+      "period": "2018-11 à Maintenant",
+      "societe": "GROUP-it",
+      "job": "Developpeur web Full Stack",
+      "task": "Dévloper des Site web et application web Intanet :Commerciale : application pour la gestion Commerciale contient les module : Achat, Vente,Stock,Statistique ...,Appilcation pour la gestion des services auto.,Application de la gestion des comptabilité",
+      "tech":"Dévloper des Site web et application web Intanet :Commerciale : application pour la gestion Commerciale contient les module : Achat, Vente,Stock,Statistique ...,Appilcation pour la gestion des services auto.,Application de la gestion des comptabilité, Win Form, Wordpress, Angular, Angular material, Asp .net core, Laravel 7, Sql Server, Mysql",
+      "links":"fermomassira.dyndns.org"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Recette de cuisine",
+      "date": "2018/09/01",
+      "description": "Site web pour ajouter des recette de cuisine",
+      "tech": "Angular, Angular material, Express js, MongoDB",
+      "image": "assets/recipe.jpg",
+      "url": "https://recette-cuisine.herokuapp.com",
+      "isPrivate": false,
+      "git": ""
+    },
+    {
+      "id": 2,
+      "title": "Ouvrier/Professionnelle",
+      "date": "2018/11/01",
+      "description": "Site web pour trouver l'ouvrier/professionnelle le plus adequat/proche",
+      "tech": "Angular, Angular material, Asp .net core, Mysql",
+      "image": "assets/ouvrier.jpg",
+      "url": "https://ouvrier.herokuapp.com",
+      "isPrivate": false,
+      "git": ""
+    },
+    {
+      "id": 3,
+      "title": "Produit cosmétique",
+      "date": "2019/02/01",
+      "description": "Site web pour gere les produit cosmétique avec un dashboard inspirer de cms wordpress",
+      "tech": "Angular, Angular material, Express js, MongoDB",
+      "image": "assets/produit_cosmetique.jpg",
+      "url": "https://forever-living.herokuapp.com",
+      "isPrivate": false,
+      "git": ""
+    },
+
+    {
+      "id": 6,
+      "title": "Tourisme autoguidé",
+      "date": "2020/02/01",
+      "description": "Site web qui vise les personnes ayant entre 18-25 ans désirant visiter un lieu sans avoir besoin d’un guide",
+      "tech": "Angular, Angular material, Express JS/Ts, Sqlite",
+      "image": "assets/tourisme-autoguide.jpg",
+      "url": "https://tourisme-autoguide.herokuapp.com",
+      "isPrivate": false,
+      "git": "https://github.com/djm2x/tourisme"
+    },
+    {
+      "id": 7,
+      "title": "gestion-commerciale",
+      "date": "2020/03/01",
+      "description": "Application web de gestion d'un magasin de quincaillerie et matériel de construction et bricolage",
+      "tech": "Angular, Angular material, Asp .net core, Sql Server",
+      "image": "assets/brik-afric.jpg",
+      "url": "https://co0merciale.herokuapp.com",
+      "isPrivate": false,
+      "git": "https://github.com/djm2x/gestion-commerciale"
+    },
+
+      {
+      "id": 10,
+      "title": "Système pour la gestion des biens informatique",
+      "date": "2020/06/19",
+      "description": "Application web pour la gestion des biens informatique",
+      "tech": "Angular, Angular material, Asp .net core, Sqlite",
+      "image": "assets/gestion-materiels.png",
+      "url": "https://gestion-material.herokuapp.com/",
+      "isPrivate": false,
+      "git": ""
+    },
+    {
+      "id": 11,
+      "title": "System-info",
+      "date": "2020/06/19",
+      "description": "Application Bureau qui collecte les informations système (cpu, gpu, network, bios, model, ram ...), et une liste des applications installé sur l'appareil.",
+      "tech": "Angular, Angular material, Electron JS/Ts",
+      "image": "assets/system-info.jpg",
+      "url": "https://gestion-material.herokuapp.com/a/desktop",
+      "isPrivate": false,
+      "git": ""
+    }
+
+
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "domaine": "front-end",
+      "items": [
+        { "name": "Angular", "value": 95 },
+        { "name": "Angular Material", "value": 95 },
+        { "name": "Bootstrap", "value": 70 }
+      ]
+    },
+    {
+      "id": 2,
+      "domaine": "back-end",
+      "items": [
+        { "name": "ASP.NET  core", "value": 95 },
+        { "name": "Node js (Express Js & Ts)", "value": 90 },
+        { "name": "Laravel", "value": 90 }
+      ]
+    },
+    {
+      "id": 3,
+      "domaine": "Mobile / Desktop",
+      "items": [
+        { "name": "Ionic (Angular)", "value": 70 },
+        { "name": "Electron Js (Angular)", "value": 85 }
+      ]
+    },
+    {
+      "id": 4,
+      "domaine": "Database",
+      "items": [
+        { "name": "Sqlite", "value": 90 },
+        { "name": "MySQL", "value": 80 },
+        { "name": "SQL Server", "value": 80 },
+        { "name": "MongoDB", "value": 90 }
+      ]
+    },
+    {
+      "id": 5,
+      "domaine": "Dev-ops",
+      "items": [
+        { "name": "Github", "value": 80 },
+        { "name": "IIS", "value": 80 },
+        { "name": "Npm", "value": 90 },
+        { "name": "heroku deployment", "value": 90 }
+      ]
+    },
+    {
+      "id": 6,
+      "domaine": "Outils",
+      "items": [
+        { "name": "Visual Studio code", "value": 90 },
+        { "name": "Adobe Photoshop", "value": 90 },
+        { "name": "Adobe XD", "value": 70 },
+        { "name": "FL Studio", "value": 90 }
+      ]
+    }
+  ],
+  "educations": [
+    {
+      "id": 1,
+      "period": "2009-2010",
+      "dipolma": "Baccalauréat Science Physique",
+      "universite": "Lycée Moulay Ali Charif TEMARA"
+    },
+    {
+      "id": 2,
+      "period": "2014",
+      "dipolma": "DEUG science de la Biologie",
+      "universite": "Faculté de science-Rabat"
+    },
+    {
+      "id": 3,
+      "period": "2015",
+      "dipolma": "Licence fondamental en Biologie",
+      "universite": "Faculté de science-Rabat"
+    },
+    {
+      "id": 4,
+      "period": "2017",
+      "dipolma": "Certification Microsoft (ASP.NET MVC 5, SQL SERVER, C#, « HTML,CSS et JS », WIN 7)",
+      "universite": "Institut Spécialisé de Technologie Appliquée - TEMARA"
+    },
+    {
+      "id": 5,
+      "period": "2016-2018",
+      "dipolma": "DTS Développement Informatique",
+      "universite": "Institut Spécialisé de Technologie Appliquée - TEMARA"
+    }
+
+  ],
+  "about": {
+    "intro": "My passion is to create from zero line to full application thats may hepls others for their lifes. so i teel my self always : \"I need more power\".",
+    "intro2": "Passionner par le métier. Constamment à l’écoute et en veille technique dans mon domaine, je reste toujours à et à l'écoute du marché et je veille à développer avec les derniers technologies qui existe et bien les maîtriser.",
+    "firstName": "Khadija",
+    "lastName": "EL Haddaoui",
+    "profession": "Developpeur web full stack",
+    "image": "assets/khadija.jpg",
+    "info": [
+      { "icon": "email", "name": "Elhaddaoui19@gmail.com", "href": "mailto:Elhaddaoui19@gmail.com" },
+      { "icon": "", "text": "in", "name": "in/mohamed-mourabit", "href": "https://www.linkedin.com/in/mohamed-mourabit" },
+      { "icon": "", "text": "git", "name": "github.com/djm2x", "href": "https://github.com/djm2x" },
+      { "icon": "call", "name": "(+212) 6 77 47 78 34", "href": "tel:+212671265478" },
+      { "icon": "place", "name": "Elmenzeh Ain-Aouda", "href": "https://www.google.com/maps/@33.9268824,-6.888788,15.25z?hl=fr" }
+    ]
+  },
+  "langs": [
+    {
+      "id": 1,
+      "lang": "Arabe",
+      "level": "Maternelle"
+    },
+    {
+      "id": 2,
+      "lang": "Français",
+      "level": "Courant"
+    },
+    {
+      "id": 3,
+      "lang": "Anglais",
+      "level": "Intermédiaire"
+    }
+  ]
+}

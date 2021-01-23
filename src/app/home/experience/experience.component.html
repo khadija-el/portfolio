@@ -1,0 +1,26 @@
+<app-title title="Experience & Projects" section="4"></app-title>
+
+<div class="container" appScroll (visibilityChange)="$event === true ? state = 'show' : state = 'hide'">
+  <div class="row justify-content-center">
+    <div *ngFor="let e of list; let i=index" class="col-md-3 text-center">
+      <mat-card [@scrollAnimation]="state">
+
+        <img mat-card-image [src]="e.image" style="height: 220px;">
+        <!-- <mat-divider></mat-divider> -->
+        <mat-card-content class="mt-2">
+          <p>
+            {{e.title}}
+          </p>
+        </mat-card-content>
+
+        <mat-card-actions class="d-flex flex-row-reverse justify-content-between">
+          <button mat-stroked-button (click)="detail(e)">Detail</button>
+          <!-- <button mat-button (click)="goto(e.git)">Github</button>
+          <button mat-button (click)="goto(e.url)">LINK</button> -->
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+
+  </div>
+</div>

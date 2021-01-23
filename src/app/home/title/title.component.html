@@ -1,0 +1,6 @@
+<div class="img1" style="height: 200px;" appScroll (visibilityChange)="onDisplay($event)" [ngStyle]="{'background-image': 'url(' + img2 + ')', 'filter': service.filter}">
+  <div class="h1" [@scrollTitle]="state">
+    <h1>{{title}}</h1>
+    <mat-icon style="font-size: 40px;">keyboard_arrow_down</mat-icon>
+  </div>
+</div>

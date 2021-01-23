@@ -1,0 +1,179 @@
+<div class="host">
+
+  <div class="mybtn d-flex flex-column justify-content-center my-3" [@scrollTitle]="state">
+    <!-- <button mat-raised-button color="warn" (click)="openPDF()">Open PDF</button> -->
+    <button mat-mini-fab color="warn" (click)="openPDF()">
+      <mat-icon *ngIf="!pdf.loader">open_in_full</mat-icon>
+
+      <mat-icon *ngIf="pdf.loader">hourglass_top</mat-icon>
+      <!-- <mat-progress-spinner [diameter]="25" [mode]="'indeterminate'" color="accent" *ngIf="pdf.loader"></mat-progress-spinner> -->
+
+    </button>
+    <button mat-mini-fab color="nada" (mousedown)="mousedown(0.09)" (mouseup)="mouseup()" (mouseleave)="mouseup()">
+      <mat-icon>zoom_in</mat-icon>
+    </button>
+    <button mat-mini-fab color="nada" (mousedown)="mousedown(-0.09)" (mouseup)="mouseup()" (mouseleave)="mouseup()">
+      <mat-icon>zoom_out</mat-icon>
+    </button>
+    <button mat-mini-fab color="accent" (click)="downloadPDF()">
+      <mat-icon *ngIf="!pdf.loader">get_app</mat-icon>
+
+      <mat-icon *ngIf="pdf.loader">hourglass_top</mat-icon>
+      <!-- <mat-progress-spinner [diameter]="25" [mode]="'indeterminate'" color="warn" *ngIf="pdf.loader"></mat-progress-spinner> -->
+    </button>
+    <!-- <button mat-raised-button color="accent" (click)="downloadPDF()">Download PDF</button> -->
+  </div>
+  <section class="page my-3 mat-elevation-z8" #cv [@scrollTitle]="state">
+
+
+    <!-- <section class="page mb-2" #cv [@scrollTitle]="state"> -->
+    <!-- <mat-card class="d-flex" style="height: 295mm;" [style.transform]="'scale(' + zoom + ')'" [style.marginBottom]="zoom * 10"> -->
+      <mat-card class="d-flex"
+        [ngStyle]="{transform: 'scale(' + zoom + ')', marginBottom: (zoom <= 1 ? 0 : zoom * 100) + 'px', height: '297mm'}">
+
+      <aside>
+        <section class="mb-1">
+          <img [src]="o.about.image" [alt]="o.about.firstName" style="width: 180px;">
+        </section>
+
+        <p style="margin: 0;font-size: 1.3em; font-weight: bolder;">
+          <span>{{o.about.firstName}} {{o.about.lastName}}</span>
+        </p>
+
+        <h3 style="color: var(--selected-neutral);font-size: .8em;margin: 0;font-weight: bolder;">
+          <!-- <mat-icon>work</mat-icon>  -->
+          {{o.about.profession}}
+        </h3>
+
+
+        <mat-divider [inset]="true"></mat-divider>
+
+        <div class="my-1">
+          <div class=" info" *ngFor="let e of o.about.info; let i=index">
+            <div class="d-flex align-items-center" *ngIf="!e.text?.includes('git') && !e.text?.includes('in')">
+              <mat-icon *ngIf="e.icon !== ''" style="font-size: .8em;width: 15px; height: 15px;padding-top: 3px;margin-right: 2px;">{{e.icon}}</mat-icon>
+              <span class="text" *ngIf="e.icon === ''">{{e.text}}</span>
+              <span class="link" style="font-size: .75em;">{{e.name}}</span>
+            </div>
+          </div>
+        </div>
+
+        <mat-divider [inset]="true"></mat-divider>
+        <!-- <mat-divider [inset]="true"></mat-divider> -->
+
+        <section class="skills">
+          <p class="title mt-1">
+            <mat-icon>done_all</mat-icon> skills
+          </p>
+          <div *ngFor="let e of o.skills; let i=index" class="mb-2">
+            <p class="domaine">
+              <mat-icon>dns</mat-icon> {{e.domaine}}
+            </p>
+
+            <div *ngFor="let s of e.items; let i=index">
+              <p class="name">- {{s.name}}</p>
+            </div>
+          </div>
+        </section>
+
+        <mat-divider [inset]="true"></mat-divider>
+
+        <section class="langs">
+          <p class="title mt-1">
+            <mat-icon>g_translate</mat-icon> langue
+          </p>
+          <div *ngFor="let e of o.langs; let i=index">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="lang">
+                <mat-icon>translate</mat-icon> {{e.lang}} :
+              </p>
+              <span>{{e.level}}</span>
+            </div>
+          </div>
+        </section>
+      </aside>
+
+      <mat-divider [vertical]="true"></mat-divider>
+
+      <div class="summary">
+        <!-- <section class="about">
+
+
+          <div class="row">
+            <div class="col-md-12">
+              <div>
+                <p class="name">
+                  <span>{{o.about.firstName}}</span>&nbsp;<span>{{o.about.lastName}}</span>
+                </p>
+                <h3 class="mb-1">
+                  <mat-icon>work</mat-icon>
+                  {{o.about.profession}}
+                </h3>
+              </div>
+              <p>Passionner par le métier. Constamment à l’écoute et en veille technique dans mon domaine, je reste
+                toujours à et à l'écoute du marché et je veille à développer avec les derniers technologies qui existe
+                et bien les maîtriser.</p>
+            </div>
+            <div class="col-md-5 px-0">
+                <div class="d-flex align-items-center info" *ngFor="let e of o.about.info; let i=index">
+                  <mat-icon *ngIf="e.icon !== ''">{{e.icon}}</mat-icon>
+                  <span class="text" *ngIf="e.icon === ''">{{e.text}}</span>
+                  <span class="link">{{e.name}}</span>
+                </div>
+              </div>
+          </div>
+
+        </section>
+        <mat-divider [inset]="true"></mat-divider> -->
+        <section class="experiences">
+          <p class="title">
+            <mat-icon>library_books</mat-icon> experiences
+          </p>
+          <div *ngFor="let e of o.experiences; let i=index" class="mb-3">
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="date">
+                <mat-icon>event</mat-icon> {{e.period}}
+              </span>
+              <span class="place">
+                <mat-icon>place</mat-icon> {{e.societe}}
+              </span>
+            </div>
+            <!-- <p class="desc">{{e.job}}</p> -->
+            <p class="tech">
+              <mat-icon>code</mat-icon> {{e.tech}}
+            </p>
+            <div class="links">
+              <span *ngFor="let link of displayUrl(e.links)" (click)="openLink(link)">
+                <mat-icon>language</mat-icon> {{link}}
+              </span>
+            </div>
+            <!-- <mat-divider [inset]="true" *ngIf="i < o.experiences.length - 1" style="margin: 0 150px;"></mat-divider> -->
+          </div>
+        </section>
+
+        <mat-divider [inset]="true"></mat-divider>
+
+        <section class="educations">
+          <p class="title mt-1">
+            <mat-icon>school</mat-icon> educations
+          </p>
+          <div *ngFor="let e of o.educations; let i=index" class="mb-2">
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="date">
+                <mat-icon>event</mat-icon> {{e.period}}
+              </span>
+              <span class="place">
+                <mat-icon>place</mat-icon> {{e.universite}}
+              </span>
+            </div>
+            <p class="tech">{{e.dipolma}}</p>
+            <!-- <mat-divider [inset]="true" *ngIf="i < o.educations.length - 1" style="margin: 0 150px;"></mat-divider> -->
+          </div>
+        </section>
+        <!-- <mat-divider [inset]="true"></mat-divider> -->
+
+      </div>
+    </mat-card>
+    <!-- </section> -->
+  </section>
+</div>

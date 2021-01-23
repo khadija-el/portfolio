@@ -1,0 +1,58 @@
+<app-title title="Contact" section="5"></app-title>
+
+
+<div class="container" appScroll (visibilityChange)="$event === true ? state = 'show' : state = 'hide'">
+  <div class="row justify-content-center">
+    <div class="col-md-6 text-center" [@scrollAnimation]="state">
+      <mat-card style="box-shadow: 2px 2px 10px 1px rgba(0,0,0,.2);margin: 20px 0 20px;">
+        <!-- <form [formGroup]="myForm" (ngSubmit)="openSnackBar(myForm)">
+          <div class="example-container">
+            <mat-form-field>
+              <input matInput placeholder="Name" formControlName="name">
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput placeholder="Subject" formControlName="subject">
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput placeholder="Email" formControlName="email">
+              <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+            </mat-form-field>
+            <mat-form-field>
+              <textarea matInput placeholder="Message" formControlName="message"></textarea>
+            </mat-form-field>
+            <button mat-raised-button type="submit" color="primary" [disabled]="!myForm.valid"
+              style="border-radius: 0;">SEND</button>
+          </div>
+        </form> -->
+        <div class="mt-3 mb-2">
+
+
+          <div class="d-flex align-items-center mb-4 px-2 py-3" *ngFor="let e of about.info; let i=index"
+          style="font-size: 1.2em; box-shadow: 1px 1px 10px rgb(224, 224, 224); cursor: pointer;" (click)="openLink(e)">
+            <!-- <i *ngIf="e.icon.includes('fa-')" [class]="e.icon"></i> -->
+            <mat-icon *ngIf="e.icon !== ''">{{e.icon}}</mat-icon>
+            <span class="text" *ngIf="e.icon === ''" style="font-weight: bolder;">{{e.text}}</span>
+            <span class="link mx-3">{{e.name}}</span>
+          </div>
+        </div>
+
+      </mat-card>
+    </div>
+    <div class="col-md-6 text-center" [@scrollAnimation]="state">
+      <mat-card style="box-shadow: 2px 2px 10px 1px rgba(0,0,0,.2);margin: 20px 0 20px;border-radius: 4px;">
+
+        <iframe style="height: 50vh; width: 100%;"
+        src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20temara+()&amp;t=p&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+        </iframe>
+
+        <!-- <iframe scrolling="no" marginheight="0" marginwidth="0"
+          src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Rabat+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          width="520" height="400" frameborder="0"></iframe> <a
+          href='http://maps-generator.com/fr'>http://maps-generator.com/</a>
+        <script type='text/javascript'
+          src='https://embedmaps.com/google-maps-authorization/script.js?id=ec09cb365f02e367640c15d8661f52ae6439bc5d'></script> -->
+      </mat-card>
+    </div>
+  </div>
+</div>

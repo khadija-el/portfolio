@@ -1,0 +1,14 @@
+<app-title title="Education" section="2"></app-title>
+<div class="container" appScroll (visibilityChange)="$event === true ? state = 'show' : state = 'hide'">
+    <mat-card [@scrollAnimation]="state" style="box-shadow: 2px 2px 10px 1px rgba(0,0,0,.2);margin: 20px 0 20px;">
+        <div>
+            <div class="mycard" *ngFor="let e of list | async; let i=index">
+                <p class="title mb-1">
+                  <mat-icon>school</mat-icon>
+                  <span class="ml-2">{{e.period}}</span>
+                </p>
+                <p><b>{{e.dipolma}}</b> - <span style="font-style: italic;">{{e.universite}}</span></p>
+            </div>
+        </div>
+    </mat-card>
+</div>
