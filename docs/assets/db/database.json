@@ -2,11 +2,11 @@
   "experiences": [
     {
       "id": 1,
-      "period": "2018-05",
-      "societe": "Pixie Web",
+      "period": "2018-07 à 2018-10",
+      "societe": "Harmony Technology",
       "job": "Developpeur web Full Stack",
-      "task": "Conception et développement d'une application web",
-      "tech":"Angular, Asp core, SignalR et Sql server, Bootstrap 4",
+      "task": "Projet de développement de système RFID pour la traçabilité des bandes de sauvegarde",
+      "tech":"RFID API, Asp.net, Sql server, Angular, SignalR",
       "links":""
     },
     {
@@ -20,44 +20,17 @@
     },
     {
       "id": 3,
-      "period": "2018-11",
+      "period": "2018-10",
       "societe": "Localhost",
       "job": "Developpeur web Full Stack",
       "task": "Site web pour trouver l'ouvrier/professionnelle le plus adequat/proche",
       "tech":"Angular, Angular material, Asp .net core, Mysql",
       "links":"ouvrier0;"
     },
-    {
-      "id": 4,
-      "period": "2019-01 à 2019-07",
-      "societe": "Harmony Technology",
-      "job": "Developpeur web Full Stack",
-      "task": "Projet de développement de système RFID pour la traçabilité des bandes de sauvegarde",
-      "tech":"RFID API, Asp.net, Sql server, Angular, SignalR",
-      "links":""
-    },
-    {
-      "id": 3,
-      "period": "2019-11 à 2020-10",
-      "societe": "MARIT",
-      "job": "Developpeur web Full Stack",
-      "task": "Site web et application web Intanet",
-      "tech":"Angular, Angular material, Asp .net core, Laravel 7, Sql Server, Mysql",
-      "links":"didh0;panddh0;co0merciale0;http://aucnom.com0;http://connectingroup.org/0;mem-ssa0;"
-    },
-    {
-      "id": 5,
-      "period": "2020-02 à 2020-03",
-      "societe": "Licence pro (Projet tuteuré)",
-      "job": "Developpeur web Full Stack",
-      "task": "Site web qui vise les personnes ayant entre 18-25 ans désirant visiter un lieu sans avoir besoin d’un guide",
-      "tech":"Angular, Angular material, Express JS/Ts, Sqlite",
-      "links":"tourisme-autoguide0;"
-    },
-    {
+       {
       "id": 6,
       "period": "2020-03 à 2020-06",
-      "societe": "Licence pro (Stage d'application professionnelle)",
+      "societe": "",
       "job": "Developpeur web Full Stack",
       "task": "Système pour la gestion des biens informatique et Application Bureau qui collecte les informations système (cpu, gpu, network, bios, model, ram ...), et une liste des applications installé sur l'appareil.",
       "tech":"Angular, Angular material, Asp .net core, Sqlite, Electron JS/TS",
@@ -71,6 +44,15 @@
       "task": "Time track est un logiciel de gestion du temps et de pointage",
       "tech":"Angular, Angular material, Asp .net core, Sqlite",
       "links":"https://p0intage.herokuapp.com0;"
+    },
+    {
+      "id": 8,
+      "period": "2018-11 à Maintenant",
+      "societe": "GROUP-it",
+      "job": "Developpeur web Full Stack",
+      "task": "Dévloper des Site web et application web Intanet :Commerciale : application pour la gestion Commerciale contient les module : Achat, Vente,Stock,Statistique ...,Appilcation pour la gestion des services auto.,Application de la gestion des comptabilité",
+      "tech":"Dévloper des Site web et application web Intanet :Commerciale : application pour la gestion Commerciale contient les module : Achat, Vente,Stock,Statistique ...,Appilcation pour la gestion des services auto.,Application de la gestion des comptabilité, Win Form, Wordpress, Angular, Angular material, Asp .net core, Laravel 7, Sql Server, Mysql",
+      "links":"fermomassira.dyndns.org"
     }
   ],
   "projects": [
@@ -83,7 +65,7 @@
       "image": "assets/recipe.jpg",
       "url": "https://recette-cuisine.herokuapp.com",
       "isPrivate": false,
-      "git": "https://github.com/djm2x/recipe"
+      "git": ""
     },
     {
       "id": 2,
@@ -94,7 +76,7 @@
       "image": "assets/ouvrier.jpg",
       "url": "https://ouvrier.herokuapp.com",
       "isPrivate": false,
-      "git": "https://github.com/djm2x/ouvrier"
+      "git": ""
     },
     {
       "id": 3,
@@ -105,30 +87,9 @@
       "image": "assets/produit_cosmetique.jpg",
       "url": "https://forever-living.herokuapp.com",
       "isPrivate": false,
-      "git": "https://github.com/djm2x/produit_cosmetique"
+      "git": ""
     },
-    {
-      "id": 4,
-      "title": "Système de Suivi des recommandations",
-      "date": "2019/11/01",
-      "description": "Intranet pour la suivi des recommandations pour la Délégation Interministérielle aux Droits de l'Homme",
-      "tech": "Angular, Angular material, Angular Internationalization, Asp .net core, Sql Server",
-      "image": "assets/didh.png",
-      "url": "https://didh.herokuapp.com",
-      "isPrivate": true,
-      "git": "https://github.com/djm2x/didh"
-    },
-    {
-      "id": 5,
-      "title": "Système pour suivre le plan de mise en œuvre du plan d'action national dans le domaine de la démocratie et des droits de l'homme",
-      "date": "2020/02/01",
-      "description": "Intranet pour suivre le plan de mise en œuvre du plan d'action national dans le domaine de la démocratie et des droits de l'homme",
-      "tech": "Angular, Angular material, Asp .net core, Sql Server",
-      "image": "assets/panddh.png",
-      "url": "https://panddh.herokuapp.com",
-      "isPrivate": true,
-      "git": "https://github.com/djm2x/panddh"
-    },
+
     {
       "id": 6,
       "title": "Tourisme autoguidé",
@@ -151,29 +112,8 @@
       "isPrivate": false,
       "git": "https://github.com/djm2x/gestion-commerciale"
     },
-    {
-      "id": 8,
-      "title": "Centre National de Transfusion Sanguine et d'Hématologie",
-      "date": "2020/04/01",
-      "description": "Site web pour le Centre National de Transfusion Sanguine et d'Hématologie",
-      "tech": "Angular, Angular material, Laravel, Mysql",
-      "image": "assets/cntsh.jpg",
-      "url": "http://aucnom.com/",
-      "isPrivate": false,
-      "git": "https://github.com/djm2x/blood-donation"
-    },
-    {
-      "id": 9,
-      "title": "Connecting Group International",
-      "date": "2020/04/01",
-      "description": "Site web pour Connecting Group International avec un back-office pour ajouter les nouveau activites",
-      "tech": "Angular, Angular material, Laravel, Mysql",
-      "image": "assets/cgi.jpg",
-      "url": "http://connectingroup.org/",
-      "isPrivate": false,
-      "git": "https://github.com/djm2x/connectionggroup"
-    },
-    {
+
+      {
       "id": 10,
       "title": "Système pour la gestion des biens informatique",
       "date": "2020/06/19",
@@ -182,7 +122,7 @@
       "image": "assets/gestion-materiels.png",
       "url": "https://gestion-material.herokuapp.com/",
       "isPrivate": false,
-      "git": "https://github.com/djm2x/gestion-material"
+      "git": ""
     },
     {
       "id": 11,
@@ -193,30 +133,10 @@
       "image": "assets/system-info.jpg",
       "url": "https://gestion-material.herokuapp.com/a/desktop",
       "isPrivate": false,
-      "git": "https://github.com/djm2x/systeminformation-electron"
-    },
-    {
-      "id": 12,
-      "title": "Suivi des activités des services déconcentrés - Ministère de l'Energie, des Mines et de l'Environnement",
-      "date": "2020/07/01",
-      "description": "Application web pour la Suivi des activités des services déconcentrés, systeme genere aussi les statiqtique de chaque activites",
-      "tech": "Angular, Angular material, Electron JS",
-      "image": "assets/suivi-activites.png",
-      "url": "https://mem-ssa.herokuapp.com",
-      "isPrivate": true,
-      "git": "https://github.com/djm2x/mem"
-    },
-    {
-      "id": 13,
-      "title": "Time track est un logiciel de gestion du temps et de pointage",
-      "date": "2020-11",
-      "description": "Application web pour la pointage du personnel et la gestion du temps de des employés",
-      "tech": "Angular, Angular material, Asp .net core, Sqlite",
-      "image": "assets/time-track.png",
-      "url": "https://p0intage.herokuapp.com/",
-      "isPrivate": false,
-      "git": "https://github.com/djm2x/web_pointage"
+      "git": ""
     }
+
+
   ],
   "skills": [
     {
@@ -279,21 +199,21 @@
   "educations": [
     {
       "id": 1,
-      "period": "2007-2008",
+      "period": "2009-2010",
       "dipolma": "Baccalauréat Science Physique",
       "universite": "Lycée Moulay Ali Charif TEMARA"
     },
     {
       "id": 2,
-      "period": "2008-2010",
-      "dipolma": "DUT Lieutenant de Maritime",
-      "universite": "Institut Supérieur des Pêches Maritimes - AGADIR"
+      "period": "2014",
+      "dipolma": "DEUG science de la Biologie",
+      "universite": "Faculté de science-Rabat"
     },
     {
       "id": 3,
-      "period": "2014-2015",
-      "dipolma": "Licence professionnel en Pêche",
-      "universite": "Institut Supérieur des Pêches Maritimes - AGADIR"
+      "period": "2015",
+      "dipolma": "Licence fondamental en Biologie",
+      "universite": "Faculté de science-Rabat"
     },
     {
       "id": 4,
@@ -306,28 +226,22 @@
       "period": "2016-2018",
       "dipolma": "DTS Développement Informatique",
       "universite": "Institut Spécialisé de Technologie Appliquée - TEMARA"
-    },
-    {
-      "id": 6,
-      "period": "2019-2020",
-      "dipolma": "Licence pro - Métiers de l’informatique : conduite de projet – Tech du développement web ",
-      "universite": "Faculté des Sciences & Techniques - Université de Limoges FRANCE"
     }
+
   ],
   "about": {
     "intro": "My passion is to create from zero line to full application thats may hepls others for their lifes. so i teel my self always : \"I need more power\".",
     "intro2": "Passionner par le métier. Constamment à l’écoute et en veille technique dans mon domaine, je reste toujours à et à l'écoute du marché et je veille à développer avec les derniers technologies qui existe et bien les maîtriser.",
-    "firstName": "Mohamed",
-    "lastName": "Mourabit",
+    "firstName": "Khadija",
+    "lastName": "EL Haddaoui",
     "profession": "Developpeur web full stack",
-    "image": "assets/me.png",
+    "image": "assets/khadija.jpg",
     "info": [
-      { "icon": "language", "name2": "https://djm2x.github.io/me", "name": "mohamed-mourabit.com", "href": "https://mohamed-mourabit.com"},
-      { "icon": "email", "name": "dj-m2x@hotmail.com", "href": "mailto:dj-m2x@hotmail.com" },
+      { "icon": "email", "name": "Elhaddaoui19@gmail.com", "href": "mailto:Elhaddaoui19@gmail.com" },
       { "icon": "", "text": "in", "name": "in/mohamed-mourabit", "href": "https://www.linkedin.com/in/mohamed-mourabit" },
       { "icon": "", "text": "git", "name": "github.com/djm2x", "href": "https://github.com/djm2x" },
-      { "icon": "call", "name": "(+212) 6 71 26 54 78", "href": "tel:+212671265478" },
-      { "icon": "place", "name": "Hay maamoura-TEMARA", "href": "https://www.google.com/maps/@33.9268824,-6.888788,15.25z?hl=fr" }
+      { "icon": "call", "name": "(+212) 6 77 47 78 34", "href": "tel:+212671265478" },
+      { "icon": "place", "name": "Elmenzeh Ain-Aouda", "href": "https://www.google.com/maps/@33.9268824,-6.888788,15.25z?hl=fr" }
     ]
   },
   "langs": [
